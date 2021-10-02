@@ -1,4 +1,4 @@
-package com.fly.pro2t.DTO;
+package com.fly.pro2.DTO;
 
 public class MemberDTO {
 	
