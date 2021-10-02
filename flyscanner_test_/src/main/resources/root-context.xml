@@ -15,7 +15,6 @@
 		<property name="dataSource" ref="dbcp"></property>
 	</bean>
 
-
 	<bean id="mybatis" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="config"></constructor-arg>
 	</bean>
