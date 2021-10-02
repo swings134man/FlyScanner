@@ -1,11 +1,12 @@
-package com.fly.pro2t;
+package com.fly.pro2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import com.fly.pro2t.DAO.MemberDAO;
-import com.fly.pro2t.DTO.MemberDTO;
+import com.fly.pro2.DAO.MemberDAO;
+import com.fly.pro2.DTO.MemberDTO;
 
 @Service
 public class MemberService {
@@ -17,12 +18,11 @@ public class MemberService {
 	@Autowired
 	BCryptPasswordEncoder pwEncoder;
 	
-	
+	@Transactional(rollbackFor = Exception.class)
 	public int create(MemberDTO memberDTO) {
 		memberDTO.setPw(pwEncoder.encode(memberDTO.getPw()));
 		int result = dao.sInsert(memberDTO);
 		return result;
-		
 	}
 	
 	

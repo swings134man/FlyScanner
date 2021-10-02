@@ -1,4 +1,4 @@
-package com.fly.pro2t;
+package com.fly.pro2;
 
 import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 import javax.servlet.http.HttpServletRequest;
@@ -6,12 +6,13 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.fly.pro2t.DAO.MemberDAO;
-import com.fly.pro2t.DTO.MemberDTO;
+import com.fly.pro2.DAO.MemberDAO;
+import com.fly.pro2.DTO.MemberDTO;
 
 @Controller
 public class MemberController {
@@ -87,7 +88,7 @@ public class MemberController {
 		if (result == 1) {
 			return "redirect:member_info.member?id=" + id2;
 		}else {
-			return "member_info_u";
+			return "error";
 		}
 	}//회원정보수정
 	
