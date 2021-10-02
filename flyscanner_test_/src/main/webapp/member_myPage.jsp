@@ -40,6 +40,20 @@
  		})//ajax
 	} --%>
 </script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+$('#bt2').click(function() {
+	window.open('bookSearch.jsp', 'bookSearchPop', 'width=950, height=950, left=800, top=600, resizable = yes');	
+})
+})
+
+function c1() {
+	window.open('bookSearch.jsp', 'bookSearchPop', 'width=950, height=950, left=800, top=600, resizable = yes');
+}
+
+
+</script>
 <style type="text/css">
 	.t1{
 		font-size: 20px;
@@ -85,14 +99,16 @@
 		
 		<tr style="width: 60%; height: 30%;">
 			<td class="icon"> <i class="fas fa-receipt"></i> </td>
-			<td class="line"> <a href="" class="t1">예약 조회</a> </td>
-			<td class="line"> <button>조회</button>	</td>
+			<td class="line"> <a href="#" class="t1" onclick="c1()">예약 조회</a> </td>
+			<td class="line"> <button id="bt2">조회</button>	</td>
 		</tr>
 		
 		<tr style="width: 20%; height: 30%;">
 			<td class="icon"><i class="far fa-bell"></i></td>
-			<td class="line"> <a href="" class="t1">문의사항 조회</a> </td>
-			<td class="line"> <button>조회</button> </td>
+			<td class="line"> <a href="questionList" class="t1">문의사항 조회</a> </td>
+			<td class="line"> 
+			<form action="questionList">
+			<button>조회</button> </form></td>
 		</tr>
 	</table>
 	<div style="margin-top: 20px;">

@@ -2,6 +2,14 @@
     pageEncoding="UTF-8"%>
      <%
     	String fId = (String)session.getAttribute("fId");
+     	
+    /*  String fId = "null";
+ 	
+ 	if(session != null){
+   		fId =(String)session.getAttribute("fId"); // user 유저일땐 안보여요
+ 		
+ 	} */
+     
     %>
 <!doctype html>
 <head>
@@ -40,7 +48,7 @@
 		
 		if (!Kakao.Auth.getAccessToken()) {
 			  console.log('Not logged in.');
-			  alert('Not logged in.');
+			  //alert('Not logged in.');
 			  return;
 			}
 			Kakao.Auth.logout(function() {
@@ -113,10 +121,10 @@
                                         <a class="nav-link" href="index.jsp">홈</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">항공권</a>
+                                        <a class="nav-link" href="airIndex.jsp">항공권</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">호텔</a>
+                                        <a class="nav-link" href="htMain2.jsp">호텔</a>
                                     </li>
                                    <!--  <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
@@ -130,23 +138,23 @@
                                         </div> -->
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
+                                        <a class="nav-link dropdown-toggle" href="faqSelect.jsp" id="navbarDropdown_1"
                                             role="button" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             고객센터
                                         </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
+                                       <!--  <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
                                             <a class="dropdown-item" href="#">QnA</a>
                                             <a class="dropdown-item" href="#">FAQ</a>
                                             <a class="dropdown-item" href="#">기타</a>
-                                        </div>
+                                        </div> -->
                                     </li>
                                    <!--  <li class="nav-item">
                                         <a class="nav-link" href="contact.html">고객센터</a>
                                     </li> -->
                                 </ul>
                             </div>
-                            <a href="#" class="btn_1 d-none d-lg-block">예약하다</a>
+                            <a href="airIndex.jsp" class="btn_1 d-none d-lg-block">예약하다</a>
                         </nav>
                     </div>
                 </div>

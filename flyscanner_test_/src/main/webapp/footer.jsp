@@ -42,13 +42,13 @@
                     <div class="single-footer-widget">
                         <h4>FOR TRAVELER</h4>
                         <ul>
-                            <li><a href="#">항공권</a></li>
-                            <li><a href="#">호텔</a></li>
+                            <li><a href="airIndex.jsp">항공권</a></li>
+                            <li><a href="htMain2.jsp">호텔</a></li>
                             <li><a href="member_weather.jsp">날씨</a></li>
-                            <li><a href="#">고객센터</a></li>
-                            <li><a href="#">QnA</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">여행</a></li>
+                            <li><a href="faqSelect.jsp">고객센터</a></li>
+                            <li><a href="questionList">QnA</a></li>
+                            <li><a href="faqInformation">FAQ</a></li>
+                            <li><a href="airIndex.jsp">여행</a></li>
                             <li><a href="#">런던, 영국</a></li>
                             <li><a href="#">도쿄, 일본</a></li>
                             <li><a href="#">서울, 대한민국</a></li>

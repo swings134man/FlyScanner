@@ -117,7 +117,7 @@
 		<td class="t1"> 패스워드 </td> 
 	</tr> 
 	<tr>
-		<td> <input type="text" name="pw" id="pw" class="in1"> </td>
+		<td> <input type="password" name="pw" id="pw" class="in1"> </td>
 	</tr>
 </table>
 				<!-- 카카오 로그인 버튼(이미지) -->
