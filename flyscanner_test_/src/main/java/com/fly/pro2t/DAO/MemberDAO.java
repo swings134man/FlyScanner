@@ -1,4 +1,4 @@
-package com.fly.pro2t.DAO;
+package com.fly.pro2.DAO;
 
 
 import javax.servlet.http.HttpSession;
@@ -6,8 +6,9 @@ import javax.servlet.http.HttpSession;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
-import com.fly.pro2t.DTO.MemberDTO;
+import com.fly.pro2.DTO.MemberDTO;
 
 @Repository
 public class MemberDAO {
@@ -56,12 +57,17 @@ public class MemberDAO {
 		return dto; 
 	}//info commit
 	
-	
 	public int update(MemberDTO memberDTO) {
 		System.out.println(memberDTO.getId());
-		int result = myBatis.update("member.update", memberDTO);
-		return result;
-	}
+		try {
+			int result = myBatis.update("member.update", memberDTO);
+			return result;
+		} catch (Exception e) {
+			e.printStackTrace();
+			int result = 0;
+			return result;
+		} // catch
+	}// update (회원정보 수정)
 	
 	public int delete(MemberDTO memberDTO) {
 		int result = myBatis.delete("member.delete", memberDTO);
