@@ -11,6 +11,7 @@
 - 로그인
   ---> 사이트 로그인, Kakao Login 구현 및 연동.
 - 회원 정보 CRUD 
+- MyPage 구현 --> 회원정보 검색, 호텔, 항공권 예약 조회 기능 연동, FAQ,QNA 페이지 연동.
 - OPEN API(Restful API) :  (kakao Login, open Weather API, google Map)
 - Main page 추천 (항공권, 호텔)
   ---> Ajax 사용 SQL Query문 사용하여 추천 List Up(추천수, 가격순 )
