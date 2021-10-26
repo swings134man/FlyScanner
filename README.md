@@ -9,8 +9,12 @@
 ------------------------------------------------------------
 * 개인 작업
 - 로그인
+  ---> 사이트 로그인, Kakao Login 구현 및 연동.
 - 회원 정보 CRUD 
 - OPEN API(Restful API) :  (kakao Login, open Weather API, google Map)
 - Main page 추천 (항공권, 호텔)
   ---> Ajax 사용 SQL Query문 사용하여 추천 List Up(추천수, 가격순 )
 - 회원정보 패스워드 암호화(Spring Security : BcryptPasswordEncoding)
+- 여행지 날씨, 지도 검색기능 페이지 구현
+  ---> Open Weather Map API 구현으로 검색 지역의 실시간 날씨 정보 업데이트(전세계 기준)
+  ---> Google Map, Geocoding API 사용으로 검색 지역의 위치 마커, 이동.
