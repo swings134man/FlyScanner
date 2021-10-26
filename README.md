@@ -12,4 +12,5 @@
 - 회원 정보 CRUD 
 - OPEN API(Restful API) :  (kakao Login, open Weather API, google Map)
 - Main page 추천 (항공권, 호텔)
-- 회원정보 패스워드 암호화(Spring Security)
+  ---> Ajax 사용 SQL Query문 사용하여 추천 List Up(추천수, 가격순 )
+- 회원정보 패스워드 암호화(Spring Security : BcryptPasswordEncoding)
