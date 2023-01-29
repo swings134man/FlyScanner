@@ -21,8 +21,7 @@
   ---> Google Map, Geocoding API 사용으로 검색 지역의 위치 마커, 이동.
 ------------------------------------------------------------
 ### UML - 클래스 다이어 그램
-<img src="https://user-images.githubusercontent.com/86291550/215340533-043912e6-bd57-4bfe-899d-1c5decce8515.png" />
-<br>
+<img src="https://user-images.githubusercontent.com/86291550/215340533-043912e6-bd57-4bfe-899d-1c5decce8515.png" width="300" height="300"/>
 <!-- ![image](https://user-images.githubusercontent.com/86291550/215340533-043912e6-bd57-4bfe-899d-1c5decce8515.png) -->
 ![image](https://user-images.githubusercontent.com/86291550/215340575-de6719c2-d314-4de5-9e24-b6432fd5c99f.png) <br>
 
