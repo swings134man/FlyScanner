@@ -50,6 +50,6 @@
 
 <img src="https://user-images.githubusercontent.com/86291550/215340827-6bd1e84c-9f95-4dff-b0b5-863add8e543a.png" width="400" height="400"/><br>
 <img src="https://user-images.githubusercontent.com/86291550/215340807-f839edf1-9d3f-48d3-a14e-2b8e6408e246.png" width="400" height="400"/><br>
-<img src="(https://user-images.githubusercontent.com/86291550/215340837-21e04923-26c6-472e-bcd8-84fcb8200ba9.png" width="400" height="400"/><br>
+<img src="https://user-images.githubusercontent.com/86291550/215340837-21e04923-26c6-472e-bcd8-84fcb8200ba9.png" width="400" height="400"/><br>
 
 
